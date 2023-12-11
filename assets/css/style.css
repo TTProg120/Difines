@@ -80,8 +80,9 @@ h4 {
 }
 .p5 {
   font-size: 14px;
+  font-style: normal;
   font-weight: 300;
-  line-height: 24.26px
+  line-height: 20px; 
 }
 
 .p6 {
@@ -93,7 +94,7 @@ h4 {
 .btn-medium {
   font-size: 16px;
   font-weight: 400; 
-  color: #A5A5A5;
+  color: #A5A5A5 !important;
   padding: 10px 20px;
   margin: 0 12px;  
   border-radius: 80px;
@@ -121,7 +122,7 @@ h4 {
 .btn-large-normal {
   font-size: 16px;  
   font-weight: 400;  
-  color: #ccc;
+  color: #ccc !important;
   padding: 10px 20px;
   margin: 0 12px;  
   border-radius: 80px;
@@ -777,18 +778,84 @@ section {
   height: 40px;
 }
 
+/*--------------------------------------------------------------
+# Explore
+--------------------------------------------------------------*/
 
+.explore-hero {
+  background: url("../img/explore-bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding: 233px 0;
+  margin: 100px 0 0 0;
+  text-align: center;
+}
+
+.explore-hero .title {
+  width: 693px;
+}
+
+.explore-search .explore-search-box{
+  padding: 0 20px;
+}
+
+.explore-search p{
+  font-weight: 300;
+}
+
+.explore-search input{
+  display: flex;
+  width: 354px;
+  height: 52px;
+  padding: 2px 12px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 12px;
+  border: 1px solid #5AFF19;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: #232426;
+  margin: 40px 0;
+}
+
+.coins {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+}
+
+.coins .coins-card {
+  display: flex;
+  align-items: center;
+  padding: 30px 20px;
+  border-radius: 30px; 
+  background: #232323;
+  min-height: 170px;
+}
+
+.coins .coins-card img {
+  width: 90px;
+  height: 90px;
+  margin-right: 20px;
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 .footer hr{  
-  color: #54595F;
-  margin: 0;    
+  color: #ffffff;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 0;    
 }
 
-.footer .footer-box {    
-  padding: 32px 0; 
-  
+.footer .footer-box {
+  display: flex;
+  justify-content: center;
 }
 
 .footer .copyright {
@@ -801,6 +868,10 @@ section {
 
 .footer .copyright .logo {
   height: 86px;
+}
+
+.footer .copyright p {
+  margin: 30px 30px 30px 0;
 }
 
 .footer .copyright .social-icon {
@@ -841,6 +912,11 @@ section {
   background: rgba(255, 255, 255, 0.21);
   border-radius: 30px;
   margin: 5px;  
+}
+
+.footer .bottom-text {
+  padding: 10px 0;
+  text-align: left;
 }
 
 @media (max-width: 1440px) {
@@ -1134,6 +1210,50 @@ section {
     line-height: 20px;   
   }
 
+  .explore-hero { 
+    background-size: contain;  
+    padding: 100px 0 30px 0;
+    margin: 0;
+  }
+  
+  .explore-hero .title {
+    width: 335px;
+  }
+
+  .explore-search{
+    padding: 0;
+  }
+
+  .explore-search .explore-search-box{
+    padding: 0 20px;
+  }
+  
+  .explore-search p{
+    font-weight: 300;
+  }
+  
+  .explore-search input{    
+    width: 100%;       
+  }
+
+  .coins {
+    padding: 0;
+  }
+
+  .coins .coins-card {    
+    padding: 20px 20px;  
+    background: #232323;
+    min-height: 70px;
+  }
+  .coins .coins-card p {
+    font-size: 20px;
+  }
+
+  .coins .coins-card .p5 {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
   .footer .credits .social-icon-container {
     align-items: center;
     text-align: center;
@@ -1144,6 +1264,10 @@ section {
     align-items: center;
     text-align: center;
     border-bottom: 1px solid #FFFFFF; 
+  }
+
+  .footer .copyright p {
+    margin: 30px 0;
   }
 
   h1 {
@@ -1169,7 +1293,9 @@ section {
   .background-img {
     margin-bottom: 8px;
   }
-
+  .footer .bottom-text {    
+    text-align: center;
+  }
   
 }
 
@@ -1257,13 +1383,6 @@ section {
     line-height: 30px;
     padding: 20px;
     width: 100%;
-  }
-
-  .services .tab-button-container button .arrow-icon {
-    position: absolute;
-    right: 20px;
-    width: 20px;
-    height: 30px;
   }
   
   h2 {
